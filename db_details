@@ -1,0 +1,9 @@
+>use Userdb
+switched to db Userdb
+> db.createCollection('users')
+{ "ok" : 1 }
+> db.user.insert({name:'sachin',education:'masters',city:'Heidelberg',
+college:'SRH Hochschule'})
+WriteResult({ "nInserted" : 1 })
+> db.user.find();
+{ "_id" : ObjectId("59137247ad4a2a6c143f64ab"), "name" : "sachin", "education" : "masters", "city" : "Heidelberg", "college" : "SRH Hochschule" }
